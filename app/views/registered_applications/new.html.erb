@@ -1,0 +1,22 @@
+<div class="container backg">
+  <div class="span12 text-center">
+    <h1>Register a new application to track</h1>
+  </div>
+  </br>
+  </br>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <p>Guidelines for registering a new application:</p>
+      <ul>
+        <li>Be sure to give a name to your application</li>
+        <li>Don't forget the URL</li>
+        <li>Remember to add the JavaScript snippet to your site.</li>
+      </ul>
+    </div>
+  </div>
+  </br>
+  </br>
+  <div class="row">
+    <%= render partial: 'form', locals: { app: @app} %>
+  </div>
+</div>

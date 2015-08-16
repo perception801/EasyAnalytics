@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="span12 text-center backg">  
+    <h1>Hello, <%= current_user.name || current_user.email %></h1>
+    </br>
+    <p>Here are your currently registered applications:</p>
+    </br>
+    <% @apps.each do |app| %>
+      <div class="media">
+        <div class="media-body">
+          <h4 class="media-heading">
+            <%= link_to app.name, app %>
+          </h4>
+          <small>
+            <%= app.url %>
+          </small>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
