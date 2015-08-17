@@ -2,7 +2,7 @@
   <div class="span12 text-center backg">  
     <h1>Hello, <%= current_user.name || current_user.email %></h1>
     </br>
-    <p>Here are your currently registered applications:</p>
+    <h3>Here are your currently registered applications:</h3>
     </br>
     <% @apps.each do |app| %>
       <div class="media">
