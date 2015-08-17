@@ -6,6 +6,7 @@ class RegisteredApplicationsController < ApplicationController
   end
 
   def show
+    @events = @app.events.group_by(&:name)
   end
 
   def new
