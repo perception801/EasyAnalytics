@@ -17,11 +17,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+a {
+  color: lightblue;
 
-.navbar-header li {
-    color: snow;
+a:hover {
+  color: gray;
+
 }
 
+}
 body {
   color: snow;
   background: 

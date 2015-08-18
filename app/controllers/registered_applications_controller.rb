@@ -1,12 +1,13 @@
 class RegisteredApplicationsController < ApplicationController
   before_action :find_app, :except => [:create, :index, :new]
+  before_filter :authenticate_user!
   
   def index
     @apps = current_user.registered_applications
   end
 
   def show
-    @events = @app.events.group_by(&:name)
+    @events = @app.events.all
   end
 
   def new

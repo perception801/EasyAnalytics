@@ -2,19 +2,7 @@
   <div class="span12 text-center bg">
     <h2><%= @app.name %> | <%= @app.url %> | <%= link_to "Unregister Application", @app, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you want to unregister this application?' } %></h2>
 
+    <%= pie_chart @app.events.group(:name).count %>
 
-      <table class="table-striped">
-        <tbody>
-          <thead>
-           <td>Event Name</td>
-          </thead>
-        <% @events.each do |event| %>
-          <tr>
-            <td><%= event.name %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
-  </div>
-</div>
+
 
