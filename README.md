@@ -1,4 +1,4 @@
-**Easy Analytics**
+##Easy Analytics
 
 Easy Analytics is a simple analytics service that allows you to track and understand your customers experience. 
 
